@@ -1,0 +1,4928 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900';
+
+input:-webkit-autofill{
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px #fcfcfc inset;
+}
+/*
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+        background-color:transparent !important;
+    
+    
+    -webkit-box-shadow: 0 0 0px 1000px rgba(0,0,0,0,) inset;
+        }*/
+
+.loginFormSec .userNameRow {
+    position: relative;
+}
+.loginFormSec .userNameRow i {
+    position: absolute;
+    top: 12px;
+    left:0px;
+    color:rgba(0,0,0,.5);
+}
+
+.loginFormSec .passWordRow {
+    position: relative;
+}
+
+.loginFormSec .passWordRow i {
+    position: absolute;
+    top: 12px;
+    left:0px;
+    color:rgba(0,0,0,.5);
+}
+
+
+
+
+
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#ECEFF1;
+    /*background-color:#00a9aa;
+    background-color:#00838F;*/
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    font-weight:300;
+    color:rgba(0,0,0,.8);
+    word-wrap: break-word;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    outline:none;
+}
+
+
+label {
+    display:block;
+}
+
+.loaderParentDiv {
+    position:relative;
+}
+
+.loaderParentDiv .loaderBodySec {
+    position:absolute;
+    background-color:rgba(255,255,255,.7);
+    width:100%;
+    height:100%;
+    top:0px;
+    z-index:111;
+    text-align:center;
+    display:none;
+    padding-top:45%;
+}
+.userType{
+    fon-size:20px;
+}	
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
+}
+
+
+
+/* PopUp Create Profile Start */
+
+.profilePopUpSec {
+}
+
+.modal .popLoaderSec {
+    display:none;
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background-color:rgba(255,255,255,.8);
+    text-align:center;
+}
+
+.modal .popLoaderSec .loaderSec {
+    margin:100px 0px;
+}
+
+.profilePopUpSec .genInfoFormSec {
+    clear:both;
+}
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec {
+    float:left;
+    width:200px;
+    height:200px;
+    margin:0px 30px 0px 0px;
+    position:relative;/*
+    -webkit-border-radius: 300px 300px 300px 300px;
+-moz-border-radius: 300px 300px 300px 300px;
+border-radius: 300px 300px 300px 300px;
+    background-color:rgba(0,0,0,.02);*/
+    transition: all .3s ease-out;
+}
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec img {
+    width:100%;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec .btnUploadTextBox {
+    display:none;
+}
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec img {
+    width:100%;
+    height:100%;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec {
+    width:100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec .input-field {
+    margin-top:0px;
+    width:90%;
+    margin:auto;
+}
+
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec .btn {
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    background-color:#FFF;
+    color:#00a9aa;
+}
+
+
+.profilePopUpSec .genInfoFormSec .upLoadImgSec .uploadimages {
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    background-color:#FFF;
+    color:#00a9aa;
+}
+
+
+
+
+
+
+
+.profilePopUpSec .genInfoFormSec .detailFormSec {
+    float:left;
+    width:calc(100% - 230px);
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .titleRow {
+    float:left;
+    width:25%;
+    padding:0px 10px;
+    margin:0px 0px 35px 0px;
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .nameRow {
+    float:left;
+    width:41.6666666667%;
+    padding:0px 10px;
+    margin:0px 0px 35px 0px;
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .credentialRow {
+    float:left;
+    width:33.3333333333%;
+    padding:0px 10px;
+    margin:0px 0px 35px 0px;
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .commonRow {
+    float:left;
+    width:67%;
+    padding:0px 10px;
+    margin:0px 0px 35px 0px;
+}
+
+
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .saveBtnSec {
+    clear:both;
+    margin:50px 0px 0px 0px;
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .saveBtnSec .btn {
+    padding:0px;
+}
+
+.profilePopUpSec .genInfoFormSec .detailFormSec .saveBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+.modal-footer i {
+    padding: 0px 0px 0px 0px;
+}
+
+.modal-footer  input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+/* PopUp Create Profile End */
+
+
+
+.errorMessage {
+    color:#F44336;
+}
+
+#toast-container {
+    top:inherit;
+    bottom:10%;
+}
+
+#toast-container .toast {
+    background-color:#DCEDC8;/*
+    background-color:#C5E1A5;*/
+    color:#33691E;
+    font-weight:400;
+}
+
+#toast-container .redMessage {
+    background-color:#F44336;
+    color:#FFF;
+    font-weight:400;
+}
+
+#maskMenuBg {
+    display:none;
+}
+
+.closeMenuIcon {
+    display:none;
+    position:absolute;
+    right:5px;
+    top:37px;
+    transition: all .3s ease-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    cursor:pointer;
+}
+
+.closeMenuIcon:hover {
+    background-color:rgba(0,0,0,.02);
+}
+
+.closeMenuIcon i {
+    font-size:32px;
+    color:rgba(0,0,0,.5);
+}
+
+.clear {
+    clear:both;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.floatRight {
+    float:right;
+}
+
+.textLeft {
+    text-align:left;
+}
+
+.textCenter {
+    text-align:center;
+}
+
+.textRight {
+    text-align:right;
+}
+
+.textJustify {
+    text-align:justify;
+}
+
+.smallPopUp {
+    width:500px;
+    height:40% !important;/*
+    transition: all .3s ease-out;*/
+}
+
+.largePopUp {
+    width:70%;/*
+    transition: all .3s ease-out;*/
+}
+
+.hrLine {
+    height:1px;
+    margin:1px 0px 0px 0px;
+    clear:both;
+    border-bottom:1px solid #CCC;
+}
+
+
+.topBackBtnSec a {
+    width:35px;
+    height:35px;
+    line-height:44px;
+    position:fixed;
+    top:20px;
+    left:20px;
+    background-color:rgba(0,0,0,.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.topBackBtnSec a img {
+    width:100%;
+}
+
+.headingText1 {
+    font-size: 35px;
+    color: #4a4a4a;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+.dashboardContSec .dashboardContRows .threeDotSec .dropdown-content {
+    width: 150px !important;
+    max-width: 180px;
+    top: 40px !important;
+    right: 10px;
+    left:inherit !important;
+}
+.dashboardContSec .dashboardContRows .threeDotSec i {
+    padding: 3px;
+    font-size: 25px;
+    color: rgba(0,0,0,.5);
+    transition: all .3s ease-out;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+.dashboardContSec .dashboardContRows .threeDotSec i:hover {
+    background-color:rgba(0,0,0,.05);
+}
+
+
+
+
+
+/* PopUp Section Start */
+.popUpSecMain {
+    display:none;
+    position:fixed;
+    z-index:777;
+    top:0px;
+    left:0px;
+    background-color:rgba(0, 0, 0, .5);
+    width:100%;
+    height:100%;
+}
+
+.popUpSecMain .popUpSec {
+    width:350px;
+    margin:10% auto;
+    background-color:#FFF;
+    position:relative;
+    padding:20px 0px 10px 0px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+
+.popUpSecMain .popUpSec .pageTittle {
+    font-size: 35px;
+    color: #4a4a4a;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+.popUpSecMain .popContRow {
+    padding:0px 30px 15px 30px;
+    clear:both;
+}
+
+.popUpSecMain .popBtnRow {
+    margin:0px;
+    padding:0px 20px;
+    clear:both;
+    border-top:1px solid rgba(0,0,0,.1);
+}
+
+.popUpSecMain .popBtnSec {
+    padding:10px 0px 0px 10px;
+    width:130px;
+}
+
+.popUpSecMain .popBtnSec .closeBtn {
+    text-align:center;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 8px 20px;
+    cursor: pointer;
+    outline: none;
+    border: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    transition: all .3s ease-out;
+    /*border: 1px solid rgba(0,0,0,.1);*/
+    background-color:rgba(0,0,0,.02);
+    -webkit-appearance: none;
+}
+
+.popUpSecMain .popUpSec .closeBtn:hover {
+    background-color: rgba(0,0,0,.08);
+}
+
+.popUpSecMain .popBtnSec .submitBtn {	
+    text-align:center;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    color: #666666;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 20px;
+    cursor: pointer;
+    outline: none;
+    border: 1px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    transition: all .3s ease-out;
+    background-color:rgba(0,0,0,.0);
+    -webkit-appearance: none;
+}
+
+.popUpSecMain .popUpSec .submitBtn:hover {
+
+    background-color: rgba(0,0,0,.08);
+}
+
+.popUpSecMain .popBtnSec  .okBtn {
+    width: 100px !important;
+}
+
+.popUpSecMain .popBtnSec .loginPage {
+    width:inherit;
+    margin:auto;
+}
+
+
+
+
+
+.popUpSecMain .privacyPolicyPop {
+    margin:0px auto;
+    width:750px;
+    height:100%;
+    padding:20px 0px 20px 0px;
+}
+
+.popUpSecMain .privacyPolicyPop .privContentSec {
+    width:calc(100% - 80px);
+    background-color:#FFF;
+    position:relative;
+    padding:0px 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    margin:60px 0px;
+    position: relative;
+    padding:65px 40px 25px 40px;
+    height:70%;
+    max-height:60%;
+    overflow:auto;
+}
+
+.privPopFormSec {
+    padding-top: 3px;
+}
+
+.privPopFormSec ol {
+    margin:0px;
+    padding:25px 0px 0px 25px;
+    line-height:20px;
+    font-size: 15px;
+}
+
+.privPopFormSec ol li {
+    font-weight:500;
+    line-height:20px;
+    font-size: 15px;
+}
+
+.privPopFormSec ol .contentSec {
+    padding:0px 0px 20px 0px;
+    text-align: justify;
+}
+
+.popUpSecMain .privacyPolicyPop .privContentSec .headingSec {
+    position: fixed;
+    width:670px;
+    margin-top:-65px;
+    margin-left:-40px;
+    text-align: left;
+    background-color:#FFF;
+    padding:30px 40px;
+}
+
+.popUpSecMain .privacyPolicyPop .privContentSec .headingSec .headText {
+    width:calc(100% - 100px);
+    float:left;
+    font-size: 35px;
+    color: #4a4a4a;
+    height: 35px;
+    line-height: 35px;
+}
+
+.privContentSec .headingSec .popBtnSec {
+    width:90px;
+    height:30px;
+    line-height:30px;
+    float:right;
+    cursor:pointer;
+    padding:0px;
+}
+
+.privContentSec .headingSec .popBtnSec .closeBtn:hover {
+    background-color: rgba(0,0,0,.06);
+}
+
+
+
+
+/* PopUp Section End */
+
+
+
+
+/* Login Page Start */
+
+
+
+.topBackBtnSec {
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+}
+.topBackBtnSec a {
+    color:#FFF;
+    font-size:30px;
+}
+.topBackBtnSec a i {
+    font-size:35px;
+}
+
+
+.loginBgSec {
+    /*background-color: rgba(0,0,0,.04);*/
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 400px;
+    margin: 10px auto 40px auto;	
+    transition: all .3s ease-out;
+}
+
+.loginBgSec .hrLine {
+    height:1px;
+    margin:1px 0px 0px 0px;
+    clear:both;
+    border-bottom:1px solid #DDDDDD;
+}
+
+
+.loginBgSec .logoSec {
+    width:200px;
+    margin:0px auto 10px auto;
+    padding:23px 0px 25px 0px;
+}
+
+.loginBgSec .logoSec img {
+    width:100%;
+}
+
+.loginBgSec .loginFormSec {
+    clear:both;
+    padding: 10px 40px 35px 40px;
+    background-color:#FCFCFC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin:0px;
+}
+
+.loginBgSec .loginFormSec .textRows {
+    padding:0px 0px 0px 0px;
+}
+
+.loginBgSec .loginFormSec .loginRows {
+    padding:0px 0px 10px 0px;
+    clear:both;
+}
+
+.loginBgSec .loginFormSec .submitBtnSec {
+    padding:50px 0px 0px 0px;
+}
+
+.loginBgSec .loginFormSec .loginRows .btn {
+    width:100%;
+    clear:both;
+    padding: 5px 0px;
+    height:inherit;
+    font-weight: 400;
+}
+
+
+.loginBgSec .loginFormSec .loginRows input[type="button"],.loginBgSec .loginFormSec .loginRows input[type="reset"],.loginBgSec .loginFormSec .loginRows input[type="submit"] {
+    line-height:36px;
+    width:100%;
+    display:block;
+}
+
+.loginBgSec .loginFormSec .loginRows .createAccBtnSec {
+    background-color:#F9F9F9;
+    color:#00a9aa;
+    box-shadow:0 2px 2px 0 rgba(0,0,0,0.10),0 2px 5px 0 rgba(0,0,0,0.10);
+}
+
+.loginBgSec .loginFormSec .loginRows .createAccBtnSec:hover {
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.loginBgSec .loginFormSec .rmbrPassSec {
+    width:100%;
+    clear:both;
+    padding:25px 0px 50px 0px;
+}
+
+.loginBgSec .loginFormSec .rmbrPassSec label {
+    height:inherit;
+    color:rgba(0,0,0,0.3);
+    font-weight:500;
+}
+
+.loginBgSec .loginFormSec .rmbrPassSec a {
+    color:#00a9aa;
+    transition: all .3s ease-out;
+}
+
+.userTypeSelect {
+    margin-top:30px;
+}
+
+.userTypeSelect label {
+    color:#00a9aa;
+    font-weight:400;
+}
+
+.userTypeSelect .input-field input[type="text"] {
+    background-image:url(../images/icon_arrow_down_1x.png);
+    background-repeat:no-repeat;
+    background-position:right center;
+}
+
+.loginBgSec .loginFormSec .rmbrPassSec a:hover {
+    color:#333;
+}
+
+.loginBgSec .loginFormSec .forgotPasswordSec {
+    width:100%;
+    clear:both;
+    padding:18px 0px 0px 0px;
+    text-align: center;
+}
+
+.loginBgSec .loginFormSec .forgotPasswordSec a {
+    font-weight:400;
+    color:#00a9aa;
+    transition: all .3s ease-out;
+}
+
+.loginBgSec .loginFormSec .forgotPasswordSec a:hover {
+    color:#333;
+}
+
+.loginBgSec .loginFormSec .loginOrLine {
+    width:100%;
+    clear:both;
+    padding:15px 0px 25px 0px;
+}
+
+.loginBgSec .loginFormSec .loginOrLine .lineFirst {
+    width:calc(50% - 25px);
+    float:left;
+    border-bottom:1px solid #CCC;
+    height:5px;
+    margin:11px 0px 11px 0px;
+}
+
+.loginBgSec .loginFormSec .loginOrLine .orTextSec {
+    width:50px;
+    float:left;
+    text-align:center;
+    color:#9e9e9e;
+    font-size:20px;
+}
+
+.loginBgSec .loginFormSec .loginOrLine .lineLast {
+    width:calc(50% - 25px);
+    float:left;
+    border-bottom:1px solid #CCC;
+    height:5px;
+    margin:11px 0px 11px 0px;
+}
+
+
+
+
+.loginBgSec .loginFormSec .loginRows input[type="text"] {
+    color: #000;
+    font-weight: 400;
+}
+
+
+
+.loginFormSec .userNameRow input[type="text"] {/*
+        background-image:url(../images/email-id-icon_1x.png);*/
+    background-repeat:no-repeat;
+    background-position:0px 12px;
+    width: calc(100% - 30px);
+    padding: 0px 0px 0px 30px;
+    color: #000;
+    font-weight: 400;
+}
+
+.loginFormSec .userNameRow label {
+    width: calc(100% - 30px);
+    padding: 0px 0px 0px 30px;
+    left:0;
+}
+
+.loginFormSec .passWordRow input[type="password"] {/*
+        background-image:url(../images/pasword-icon_1x.png);*/
+    background-repeat:no-repeat;
+    background-position:0px 10px;
+    width: calc(100% - 30px);
+    padding: 0px 0px 0px 30px;
+    color: #000;
+    font-weight: 400;
+}
+
+.loginFormSec .passWordRow label {
+    width: calc(100% - 30px);
+    padding: 0px 0px 0px 30px;
+    left:0;
+}
+
+
+.loginFormSec .select-wrapper span.caret {
+    top: 12px;
+    font-size: 18px;
+    color:rgba(0,0,0,.5);
+    display:none;
+}/*
+
+.privPolicyContentSec {
+    padding:10px 0px 0px 0px;
+}
+
+.privPolicyContentSec .privPoliHead {
+    padding:0px 0px 10px 0px;
+    font-size:25px;
+}
+
+.privPolicyContentSec ol {
+    transition: all .3s ease-out;
+}
+
+.privPolicyContentSec ol li {
+    font-weight:400;
+}
+
+.privPolicyContentSec ol .privPolicyContent {
+    margin-bottom:20px;
+}*/
+	
+.privPolicyContentSec {
+	padding:10px 0px 0px 0px;
+	text-align:justify;
+	}
+	
+.privPolicyContentSec a {
+	color:rgba(0,0,0,.8);
+	transition: all .3s ease-out;
+	}
+	
+.privPolicyContentSec a:hover {
+	color:rgba(0,0,0,1);
+	}
+	
+.privPolicyContentSec .privPoliHead {
+	padding:10px 0px 10px 0px;
+	font-size:25px;
+	}
+	
+.privPolicyContentSec .contactAddSec {
+	text-align:center;
+	}
+	
+.privPolicyContentSec .lowerAlpha {
+	list-style-type:lower-alpha;
+	}
+	
+.privPolicyContentSec .listDisc {
+	list-style-type:disc;
+	}
+	
+.privPolicyContentSec .lowerRoman {
+	list-style-type: lower-roman;
+	}
+	
+	
+.privPolicyContentSec ol {
+	transition: all .3s ease-out;
+	}
+	
+.privPolicyContentSec ol li {
+	margin-bottom:15px;
+	}
+	
+.privPolicyContentSec ol .privPolicyContent {
+	margin-bottom:20px;
+	}
+
+/* Login Page End */
+
+
+.footerContentSec {
+	text-align:center;
+	line-height:40px;
+	color: #00a9aa;
+	clear:both;
+	}
+	
+.footerContentSec a {
+	text-align:center;
+	color: #00a9aa;
+	}
+
+/* User Subscription Start */
+
+.userSubsContSec {
+    width:90%;
+    margin:60px auto;
+}
+
+.userSubsContSec .contTextSec {
+    width:800px;
+    margin:0px auto;
+}
+
+.userSubsContSec .contTextSec {
+    width:800px;
+    margin:0px auto;
+}
+
+.userSubsContSec .planBoxRowSec {
+    width:100%;
+    margin:auto;
+    clear:both;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes {
+    float:left;
+    width:calc(25% - 50px);
+    margin:35px 25px;
+    padding:20px 25px;
+    background-color:#FFFFFF;
+    transition: all .3s ease-out;
+    cursor:pointer;
+    -webkit-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.1);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align:center;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes:hover {
+    width:calc(25% - 30px);
+    margin:5px 15px;
+    padding:50px 25px;
+    -webkit-box-shadow:0px 3px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:0px 3px 10px 0px rgba(0,0,0,0.3);
+    box-shadow:0px 3px 10px 0px rgba(0,0,0,0.3);
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes .iconSec {
+    width:80px;
+    margin:10px auto 20px auto;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes .iconSec img {
+    width:100%;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes .boxType {
+    padding:5px 0px 5px 0px;
+    font-size:18px;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes .boxPrice {
+    padding:10px 0px 10px 0px;
+    font-size:28px;
+}
+
+.userSubsContSec .planBoxRowSec .planBoxes .boxBtnSec {
+    padding:10px 0px 10px 0px;
+}
+
+.userSubsContSec .montYearBtnSec {
+    width:550px;
+    margin:40px auto;
+    font-weight:500;
+    font-size:20px;
+}
+
+.userSubsContSec .montYearBtnSec .btnYear {
+    width:50%;
+    float:left;
+    padding:10px 0px;
+    text-align:center;
+    background-color:#ECEFF1;
+    color:#00a9aa;
+    border:2px solid #00a9aa;
+    border-right:0px;
+    -webkit-border-radius: 30px 3px 3px 30px;
+    -moz-border-radius: 30px 3px 3px 30px;
+    border-radius: 30px 3px 3px 30px;
+    cursor:pointer;
+}
+
+.userSubsContSec .montYearBtnSec .btnMonth {
+    width:50%;
+    float:right;
+    padding:10px 0px;
+    text-align:center;
+    background-color:#ECEFF1;
+    color:#00a9aa;
+    border:2px solid #00a9aa;
+    border-left:0px;
+    -webkit-border-radius: 3px 30px 30px 3px;
+    -moz-border-radius: 3px 30px 30px 3px;
+    border-radius: 3px 30px 30px 3px;
+    cursor:pointer;
+}
+
+.activeBtnMonth {
+    background-color: #00a9aa !important;
+    color: #ECEFF1 !important;
+}
+
+.activeBtnYear {
+    background-color: #00a9aa !important;
+    color: #ECEFF1 !important;
+}
+
+.userSubsContSec .skipOrText {
+    clear:both;
+    color:#4a4a4a;
+    font-size:20px;
+    font-weight:400;
+    text-align:center;
+    padding:10px 0px;
+}
+
+.userSubsContSec .skipTextSec {
+    clear:both;
+    color:#00a9aa;
+    font-size:20px;
+    font-weight:400;
+    text-align:center;
+}
+
+.userSubsContSec .skipTextSec a {
+    clear:both;
+    color:#00a9aa;
+    font-size:20px;
+    font-weight:400;
+    text-align:center;
+    padding:10px 0px;
+    text-decoration:none;
+}
+
+
+/* User Subscription End */
+
+/* For All Pages Start */
+
+.leftMenuSec {
+    background-color:#FFFFFF;
+    position:fixed;
+    width:250px;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:444;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    transition: all .3s ease-out;
+}
+
+.leftMenuBlock {
+    left:-250px;
+    transition: all .3s ease-out;
+    width:250px;
+}
+
+.leftSec {
+    height:calc(100% - 60px);
+    overflow:auto;
+    margin-top:60px;
+    background-color:#FFF;
+}
+
+.leftSec .leftLogoSec {
+    width:100%;
+    text-align:center;
+}
+
+.leftSec .leftLogoSec img {
+    width:75%;
+    margin:40px auto 0px auto;
+}
+
+.leftSec .leftProfileSec {
+    width:100%;
+    padding:25px 10px 25px 10px;
+    text-align:center;
+    border-bottom:1px solid rgba(0,0,0,.1);
+    position:relative;
+}
+
+.leftSec .leftProfileSec .profileImg {
+    width:55px;
+    float:left;
+    text-align:center;
+    margin:0px 10px 0px 0px;
+}
+
+.leftSec .leftProfileSec .profileImg img {
+    background-color:rgba(0, 169, 170, 0.2);
+    width:100%;
+    -webkit-border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    border-radius: 150px 150px 150px 150px;
+}
+
+.leftSec .leftProfileSec .profileName {
+    /*font-size:20px;*/
+    font-size:17px;
+    font-weight:400;
+    color:#00a9aa;
+    float:left;
+    width:calc(100% - 65px);
+    text-align:left;
+    line-height:55px;
+}
+
+.leftSec .leftProfileSec .profileName a {
+    color:#00a9aa;
+}
+
+.leftSec .leftProfileSec .profileDetails {
+    clear:both;
+}
+
+.leftSec ul li i {
+    line-height: 50px !important;
+    float:left;
+    margin-right:22px;
+}
+
+.leftSec ul {
+    padding:0px;
+    margin:10px 0px 0px 0px;
+}
+
+.leftSec ul li {
+    margin:0px;
+    font-weight:400;
+    transition: all .3s ease-out;
+}
+
+.leftSec ul li a {
+    transition: all .3s ease-out;
+    display:block;
+    clear:both;
+    font-size:16px;
+    line-height: 52px;
+    padding:2px 25px 0px 25px;
+    color:rgba(0,0,0,.6);
+    font-weight:500;
+}
+
+.leftSec ul li a:hover {
+    background-color:rgba(0,0,0,.05);
+    color: #00a9aa;
+}
+
+.leftSec ul .active {
+    color:#00a9aa;
+}
+
+.leftSec ul .active a {
+    color:#00a9aa;
+}
+
+.leftSec ul .active:hover {
+    background-color:rgba(0,0,0,.0);
+}
+
+
+.pageTitle1 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight:400;
+    color:rgba(0,0,0,.7);
+    padding-bottom:15px;
+}
+
+.pageTitle2 {
+    font-size:25px;
+    font-weight:300;
+    color:rgba(0,0,0,.7);
+    padding-bottom:15px;
+}
+
+.pageTitle3 {
+    font-size:18px;
+    font-weight:300;
+    color:rgba(0,0,0,.7);
+    padding-bottom:15px;
+}
+
+.bodyContSec {
+    width:calc(100% - 260px);
+    /*margin:auto;*/
+    padding:90px 0px 50px 0px;
+    float:right;
+    margin:0px 5px;
+    transition: all .3s ease-out;
+    position: absolute;
+    right:0px;
+}
+
+.withMenuBody {
+    width:calc(100% - 400px);
+    float:none;
+    margin:0px 200px;
+}
+
+.pageContSec {
+    padding:0px 0px;
+    background-color:rgba(255,255,255,1);
+    -webkit-box-shadow:0px 0px 7px 0px rgba(0,0,0,.1);
+    -moz-box-shadow:0px 0px 7px 0px rgba(0,0,0,.1);
+    box-shadow:0px 0px 7px 0px rgba(0,0,0,.1);
+    clear:both;
+    margin:0px 0px 30px 0px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.pageContSec .pageContBox {
+    padding:20px 30px;
+    word-break: break-word;
+}
+
+.headerSec {
+    width:100%;
+    clear:both;
+    padding:0px 0px;
+    position:fixed;
+    z-index:555;
+    top:0px;
+    left:0px;
+    /*height:60px;*/
+    background-color:#00a9aa;
+    -webkit-box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+    -moz-box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+    box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+    transition: all .3s ease-out;
+}
+
+.darkHeader {
+    background-color:#00a9aa;
+    -webkit-box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+    -moz-box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+    box-shadow:0px 2px 7px 0px rgba(0,0,0,.2);
+}
+
+.headerSec .topHeader {
+    width:calc(100% - 30px);
+    margin:auto;
+}
+
+.headerSec .topHeader .menuSec {
+    width:calc(100% - 250px);
+    float:right;
+}
+
+.headerSec .topHeader .menuSec .searchBoxSec {
+    width:450px;
+    float:left;
+    margin:6px 0px 0px 25px;
+}
+
+.headerSec .topHeader .menuSec .searchBoxSec .textBoxSec {
+    float:left;
+    width:calc(100% - 145px);
+    margin-right:20px;
+    border-bottom:1px solid rgba(255,255,255,.4);
+    color:#FFFFFF;
+}
+
+.headerSec .topHeader .menuSec .searchBoxSec .textBoxSec input[type=text]:focus:not([readonly]) {
+    border-bottom:1px solid rgba(255,255,255,1);box-shadow:0 0px 0 0 rgba(255,255,255,1)
+}
+.headerSec .topHeader .menuSec .searchBoxSec .textBoxSec input[type=text] {
+    border-bottom: 1px solid rgba(255,255,255,.4);
+}
+
+.headerSec .topHeader .menuSec .searchBoxSec .searchBtnSec {
+    float:left;
+    width:125px;
+    border:0px;
+    color:#00a9aa;
+    font-weight:500;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    background-color:rgba(255,255,255,1);
+    -webkit-appearance: button;
+    cursor: pointer;
+    line-height: 34px;
+    display: block;
+    margin:5px 0px 0px 0px;
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+    transition: all .3s ease-out;
+}
+
+.headerSec .topHeader .menuSec .searchBoxSec .searchBtnSec:hover {
+    background-color:rgba(255,255,255,.9);
+}
+
+
+
+.headerSec .topHeader .menuSec .pageHeading {
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.headerSec .topHeader .topMenuIcon {
+    float:left;
+    margin:10px 0px;
+    width:236px;
+}
+
+.headerSec .topHeader .topMenuIcon a {
+    float:left;
+    color:#FFFFFF;
+    padding: 7px 10px;
+    margin: 0px 10px 0px 0px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    transition: all .3s ease-out;
+}
+
+.headerSec .topHeader .topMenuIcon a:hover {
+    background-color:rgba(0,0,0,.05);
+}
+
+.headerSec .topHeader .topMenuIcon .mainTitleSec {
+    float:left;
+    height:40px;
+    line-height:40px;
+    color: #FFFFFF;
+    font-size:24px;
+    font-weight:400;
+}
+
+.headerSec .topHeader .topMenuIcon .mainTitleSec img {
+    height:100%;
+}
+
+.dashBoardMainMenu {
+    float:left;
+}
+
+.dashBoardMainMenu .tabs {
+    height:60px;
+    line-height:60px;
+}
+
+.dashBoardMainMenu .tab {
+    text-transform: capitalize;
+    padding:0px 20px;
+    height:60px;
+    line-height:60px;
+    width:auto;
+    float:left;
+}
+
+
+
+.jobSeekerContSec {
+    width:800px;
+    margin:auto;
+    padding:90px 0px 50px 0px;
+}
+
+.tabs .tab {
+    padding:0px 10px;
+}
+
+.tabs .tab a {
+    font-weight:300;
+}
+
+.tabs .tab .active {
+    color:#FFFFFF;/*
+    background-color:#00a9aa;
+    border-bottom:2px solid #ede699;*/
+} 
+
+.tabs .tab .active:hover {
+    color:#FFFFFF;
+} 
+
+.upProfBtnRow {
+    height:55px;
+    overflow:hidden;
+    padding:5px 5px 0px 5px;
+    width:50px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+
+.upProfImgBtn {
+    width:100%;
+    background-color: #FFF;
+    color: #00a9aa;
+    padding:0px 5px;
+    width: 100%;
+    height:40px !important;
+    line-height:40px !important;
+    -webkit-border-radius: 100px 100px 100px 100px;
+    -moz-border-radius: 100px 100px 100px 100px;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.upProfImgBtn:hover {
+    background-color: #FFF;
+    color: #00a9aa;
+}
+
+.upProfBtnRow .upProfImgBtn i {
+    font-size: 26px;
+    cursor:pointer;
+}
+
+
+
+/* For All Pages  End */
+
+
+/* Dashboard Page Start */
+.dashboardContSec {
+    width:650px;
+    margin:auto;
+    padding:0px 0px 0px 0px;
+    transition: all .3s ease-out;
+}
+
+
+.dashboardContSec .dashboardContRows {
+    padding: 0px 0px;
+    clear:both;
+    background-color:#f8f8f8;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    -webkit-border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
+    margin:0px 0px 25px 0px;
+    position:relative;
+}
+
+
+.dashboardContSec .dashboardContRows .imgContractorSec {
+    width:110px;
+    float:left;
+    transition: all .3s ease-out;
+}
+
+
+.dashboardContSec .dashboardContRows .detailsContractorSec {
+    width: calc(100% - 110px);
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 12px 22px 12px 20px;
+    background-color:#FFF;
+    transition: all .3s ease-out;
+    min-height:133px;
+}
+
+.dashboardContSec .dashboardContRows .imgContractorSec .imgContractor {
+    width:100%;
+    position:relative;
+}
+
+.dashboardContSec .dashboardContRows .imgContractorSec .imgContractor img {
+    width:100%;
+}
+
+.dashboardContSec .dashboardContRows .imgContractorSec .starRatingSec {
+    display:none;
+    width:120px;
+    text-align:center;
+    font-weight:500;
+    color:rgba(0,0,0,.5);
+    height: 20px;
+    margin:auto;
+    position:absolute;
+    bottom:5px;
+    left:4px;
+}
+
+.dashboardContSec .dashboardContRows .starRatingSec {
+    width:120px;
+    float:right;
+    text-align:center;
+    font-weight:500;
+    color:rgba(0,0,0,.5);
+    height: 20px;
+}
+
+.dashboardContSec .dashboardContRows .starRatingSec .material-icons {
+    font-size:20px;
+    color:rgba(0,0,0,.4);
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .nameSec {
+    float:left;
+    width:100%;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .name {
+    float:left;
+    width:calc(100% - 30px);
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .locationSec {
+    float:left;
+    width:calc(50% - 10px);
+    margin-right:10px;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .hourRateSec {
+    float:left;
+    width:50%;
+    text-align:right;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .estiTotSec {
+    float:left;
+    width:calc(100% - 220px);
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat {
+    width:45px;
+    float:right;
+    display:none;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat i {
+    float:right;
+    font-size:20px;
+    color:rgba(0,0,0,.4);
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .contRows {
+    padding:5px 0px 5px 0px;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .contRows .headText {
+    font-weight:500;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .shareContractBtn {
+    margin:55px 20px 15px 0px;
+    float:left;
+}
+
+.dashboardContSec .dashboardContRows .detailsContractorSec .paidRowSec .headText {
+    color:rgba(0,0,0,.7);
+}
+
+.dashboardContSec .dashboardContRows .threeDotSec {
+    width:30px;
+    height:30px;
+    position:absolute;
+    margin: 10px 10px 0px 0px;
+    right:0px;
+}
+
+
+
+
+
+.historyPage .dashboardContSec .dashboardContRows .detailsContractorSec .estiTotSec {
+    float:left;
+    width:50%;
+}	
+
+.historyPage .dashboardContSec .dashboardContRows .detailsContractorSec .paidRowSec {
+    float:left;
+    width:50%;
+    text-align:right;
+}
+
+/* Dashboard Pages  End */
+
+/* Setting Page Start */
+
+.tabBodyCont {
+    padding:25px;
+}
+
+.settingPage {
+    width:800px;
+    margin:auto;
+}
+
+.settingPage #accountSettings {
+    width:550px;
+    margin:auto;
+    transition: all .3s ease-out;
+}
+
+.settingPage #changePassword {
+    width:550px;
+    margin:auto;
+    transition: all .3s ease-out;
+}
+
+.settingPage #feedback {
+    width:550px;
+    margin:auto;
+    transition: all .3s ease-out;
+}
+
+.settingPage .changePassBoxes {
+    width:calc(100% - 0px);
+    width:100%;
+    padding:0px 10px 10px 10px;
+    float:left;
+}
+
+.settingPage .changePassBtn {
+    width:calc(33.3% - 0px);
+    padding:0px 10px 10px 10px;
+    float:left;
+}
+
+.settingPage .accountEmailBoxes {
+    width:calc(100% - 150px);
+    padding:0px 10px 10px 10px;
+    float:left;
+}
+
+.settingPage .saveBtn {
+    width:150px;
+    float:left;
+    text-align:center;
+    padding-top:10px;
+}
+
+.settingPage .saveBtn i {
+    padding: 0;
+}
+
+.settingPage .saveBtn input[type="submit"] {
+    line-height: 34px;
+    width:100%;
+    display:block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+.settingPage .setAccountRows {
+    /* width:calc(85% - 0px);*/
+    width:100%;
+    padding:20px 0px 20px 0px;
+    clear:both;
+    margin:auto;
+    font-weight:400;
+}
+
+.settingPage .settingPlanLeftSec {
+    width:130px;
+    float:left;
+}
+
+.settingPage .settingPlanRightSec {
+    width:calc(100% - 150px);
+    float:left;
+}
+
+.settingPage .settingPlanRightSec .cardNameSec {
+    clear:both;
+    padding:10px 0px;
+    font-weight:400;
+}
+
+.settingPage .settingPlanRightSec .cardNumberSec {
+    clear:both;
+    padding:10px 0px;
+    font-weight:500;
+}
+
+.settingPage .settingPlanRightSec .cardChangeSec {
+    clear:both;
+    padding:10px 0px;
+}
+
+.settingPage .settingPlanRightSec .cardChangeSec .btn {
+    margin:10px 10px 10px 0px;
+    width:175px;
+}
+
+.settingPage .settingPlanRightSec .cardBtnSec {
+    clear:both;
+    padding:10px 0px;
+    font-weight:400;
+}
+
+.settingPage .settingPlanRightSec .cardBtnSec .btn {
+    margin:10px 10px 10px 0px;
+    width:175px;
+}
+
+.settingPage .yourPlanSec {
+    font-weight:500;
+}
+
+.settingPage .yourPlanSec .rows {
+    padding:5px 0px;
+}
+
+.settingPage .yourPlanSec .perMontSec {
+    font-size:25px
+}
+
+.settingPage .deleteAccoSec {
+    width:calc(100% - 0px);
+    width:100%;
+    padding:0px 10px;
+    clear:both;
+}
+
+.settingPage .deleteAccoSec .privacyPolicySec a {
+    color:#00a9aa;
+    font-weight:400;
+}
+
+.settingPage .deleteAccoSec .deleteAccountSec a {
+    color:#FFFFFF;
+}
+
+.settingPage .deleteAccoSec .deleteAccountSec .btn {
+    color:#FFFFFF;
+    /*background-color:#F44336;*/
+    background-color:rgb(255,82,82);
+}
+
+.settingPage .deleteAccoSec .privacyPolicySec {
+    width:100%;
+    text-align:center;
+    padding-top:15px;
+}
+
+.settingPage .deleteAccoSec .deleteAccountSec {
+    width:100%;
+    text-align:center;
+}
+
+.settingPage .tabBodyCont .btnRowSec {
+    padding-top:20px;
+    text-align:center;
+    width:100%;
+}
+
+/* Setting Pages  End */
+
+.pageContSec .pageContBox .formBoxesSec .backBtn {
+    float:left;
+    color:#00a9aa;
+    font-weight:400;
+    height:25px;
+    line-height:25px;
+    cursor:pointer;
+}
+
+.pageContSec .pageContBox .formBoxesSec .backBtn i {
+    float:left;
+    margin-right:5px;
+}
+
+
+.pageContSec .pageContBox .formBoxesSec .boxLeftSec {
+    width:calc(50% - 20px);
+    margin-right:20px;
+    float:left;
+}
+
+.pageContSec .pageContBox .formBoxesSec .boxRightSec {
+    width:calc(50% - 20px);
+    margin-left:20px;
+    float:left;
+}
+
+.pageContSec .pageContBox .formBoxesSec .boxFullSizeSec {
+    width:100%;
+    clear:both;
+}
+
+.pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec {
+    margin:40px 0px 20px 0px;
+    text-align:center;
+}
+
+.pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec i {
+    margin:0 10px;
+    padding:0px;
+}
+
+.pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec input[type="button"], .fieldBtnRowSec  input[type="reset"], .fieldBtnRowSec  input[type="submit"] {
+    min-width:150px;
+}
+
+.pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec btn {
+}
+
+.pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec .cancelBtn {
+    background-color:#FFF;
+    color:#00a9aa;
+}
+
+
+.pageContSec .pageContBox .formBoxesSec .fieldRowSec {
+    width:100%;
+    clear:both;
+    margin:0px 0px 30px 0px;
+}
+
+/* Job Seeker Page Start */
+
+.formSec {
+    width:100%;
+    clear:both;
+}
+
+
+
+
+
+.avaiBoxSec {
+    margin:10px 0px;
+    padding:100px 10px;
+    text-align:center;
+}
+
+.avaiBoxSec .bigTextSec {
+    font-size:36px;
+    padding:10px 0px;
+}
+
+.avaiBoxSec .smallTextSec {
+    font-size:16px;
+    padding:0px 0px 20px 0px;
+}
+
+.avaiBoxSec .enterAvailableBtn {
+    clear: both;
+    margin: 10px 0px 0px 0px;
+}
+
+.avaiBoxSec .enterAvailableBtn .btn {
+    padding:0px;
+}
+
+.avaiBoxSec .enterAvailableBtn input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+/*.avaiBoxSec thead {
+        border:0px;
+        }
+        
+.fc-toolbar .fc-button-group button {
+        outline:none;
+        }
+        
+.fc-toolbar .fc-button-group button:focus {
+        background-color:#FFFFFF;
+        background-image: url(css/images/ui-icons_2694e8_256x240.png);
+        outline:none;
+        }
+        
+.avaiBoxSec table tr .monthName {
+        font-size:22px;
+        font-weight:500;
+        }
+        
+.avaiBoxSec table tr .name {
+        font-weight:400;
+        background-color:rgba(0,0,0,.05);
+        width:100px;
+        height:50px
+        }
+        
+.avaiBoxSec table tr td {
+        border:1px solid rgba(0,0,0,.07);
+        font-size:18px;
+        font-weight:400;
+        }
+        
+.avaiBoxSec table tr td {
+        text-align:center;
+        vertical-align:middle;
+        height:80px
+        }
+        
+.avaiBoxSec table tr .lastMonth {
+        font-weight:400;
+        background-color:rgba(0,0,0,.02);
+        color:rgba(0,0,0,.2);
+        }
+        
+.avaiBoxSec table tr .currentMonth {
+        font-weight:400;
+        background-color:rgba(255,255,255,1);
+        }
+        
+.avaiBoxSec table tr .availableBg {
+        background-color:#DCEDC8;
+        }
+        
+.avaiBoxSec table tr .availableBg .hours {
+        color:#00a2a2;
+        font-size:14px;
+        }
+        
+.avaiBoxSec table tr .nonAvailableBg {
+        background-color:#FFCDD2;
+        }*/
+
+.profileHeadSec {
+    width:calc(100% - 250px);
+    float:right;
+}
+
+.profileHeadSec .profileNameSec {
+    width:850px;
+    margin:auto;
+    color: #FFF;
+    font-size: 24px;
+    padding: 12px 0px;
+}
+
+.createProfilePage {
+    width:850px;
+    margin:auto;
+    padding:0px 0px 0px 0px;
+    transition: all .3s ease-out;
+    position:relative;
+}
+
+.createProfilePage .genInfoFormSec {
+    clear:both;
+}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec {
+    float:left;
+    width:200px;
+    height:200px;
+    margin:0px 30px 0px 0px;
+    position:relative;/*
+    -webkit-border-radius: 300px 300px 300px 300px;
+-moz-border-radius: 300px 300px 300px 300px;
+border-radius: 300px 300px 300px 300px;
+    background-color:rgba(0,0,0,.02);*/
+    transition: all .3s ease-out;
+}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .btn {
+    width:100%;
+    padding:0px;
+}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .btn input[type="file"] {
+    background-color:#00a9aa;
+    width:100%;
+    padding:0px;
+    height:45px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .saveBtnSec input[type="submit"], input[type="button"] {}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .btnUploadTextBox {
+    display:none;
+}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec img {
+    width:100%;
+    height:100%;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec {
+    width:100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec .input-field {
+    margin-top:0px;
+    width:90%;
+    margin:auto;
+}
+
+
+.createProfilePage .genInfoFormSec .upLoadImgSec .doProfileUploadBtnSec .btn {
+    width:100%;
+    height: 40px;
+    line-height: 40px;
+    background-color:#FFF;
+    color:#00a9aa;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec {
+    float:left;
+    width:calc(100% - 230px);
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .titleRow {
+    float:left;
+    width:25%;
+    padding:0px 10px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .nameRow {
+    float:left;
+    width:41.6666666667%;
+    padding:0px 10px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .credentialRow {
+    float:left;
+    width:33.3333333333%;
+    padding:0px 10px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .commonRow {
+    float:left;
+    width:100%;
+    padding:0px 10px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .commonRow .toolTipSec {
+    float:right;
+    width:30px;
+    height:30px;
+    margin:30px -40px 0px 0px;
+    cursor:pointer;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .commonRow .headingText {
+    width: 160px;
+    font-weight: 500;
+    float: left;
+    transition: all .3s ease-out;
+    padding: 10px 0px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .commonRow .normalText {
+    width:calc(100% - 160px);
+    float: left;
+    transition: all .3s ease-out;
+    padding: 10px 0px;
+    word-break: break-word;
+}
+
+
+.createProfilePage .genInfoFormSec .detailFormSec .officeImagesListSec {
+    width:100%;
+    padding:0px 20px;
+    height:80px;
+}
+
+
+.createProfilePage .addiInfoSec .fieldRowSec .headingText {
+    width: 160px;
+    font-weight: 500;
+    float: left;
+    transition: all .3s ease-out;
+    padding: 10px 0px;
+}
+
+.createProfilePage .addiInfoSec .fieldRowSec .normalText {
+    width:calc(100% - 160px);
+    float: left;
+    transition: all .3s ease-out;
+    padding: 10px 0px;
+    word-wrap:break-word;
+}
+
+.genInfoFormSec .detailFormSec .addDentistsRowSec {
+    width:calc(100% - 30px);
+    float:left;
+    clear:both;
+    margin:0px 0px 20px 0px;
+}
+
+.genInfoFormSec .detailFormSec .addDentistsTextSec {
+    color:#00a9aa;
+    cursor:pointer;
+    padding:10px 0px 10px 0px;
+    font-weight:400;
+    clear:both;
+}
+
+.genInfoFormSec .detailFormSec .removeAddMoreBtn {
+    width:25px;
+    height:25px;
+    padding: 2px;
+    float:right;
+    margin:20px -25px 0px 0px;
+    border:1px solid #F44336;
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    cursor:pointer;
+}
+
+.genInfoFormSec .detailFormSec .removeAddMoreBtn i {
+    color:#F44336;
+    font-size:20px;
+}
+
+
+
+.createProfilePage .genInfoFormSec .detailFormSec .saveBtnSec {
+    clear:both;
+    margin:50px 0px 0px 0px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .saveBtnSec .btn {
+    padding:0px;
+}
+
+.createProfilePage .genInfoFormSec .detailFormSec .saveBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+.createProfilePage .profileImgSec {
+    float:left;
+    width:170px;
+    /*padding:8px 0px;*/
+    margin:8px 0px;
+    transition: all .3s ease-out;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+    background-color:rgba(0,0,0,.1);
+}
+
+.createProfilePage .profileImgSec img {
+    width:100%;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+.createProfilePage .profileDetailsSec {
+    float:left;
+    width:calc(100% - 170px);
+    padding:0px 90px 0px 40px;
+    position:relative;
+    transition: all .3s ease-out;
+}
+
+.createProfilePage .pageContSec .editBtnSec {
+    position:absolute;
+    right:20px;
+    top:20px;
+    z-index:111;
+}
+
+.createProfilePage .pageContSec .editBtnSec .btn {
+    padding:0px;
+}
+
+.createProfilePage .pageContSec .editBtnSec .linkBtn {
+    padding:0px 30px;
+}
+
+.createProfilePage .pageContSec .editBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+
+
+.bodyContSec .createProfilePage .pageContSec .editBtnSec .generalEditBtn {
+    display:block;
+}
+
+.bodyContSec .createProfilePage .pageContSec .editBtnSec .threeDotDrop {
+    display:none;
+}
+
+.bodyContSec .createProfilePage .pageContSec .editBtnSec .threeDotDrop i {
+    color:#00a9aa;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    transition: all .3s ease-out;
+}
+
+.bodyContSec .createProfilePage .pageContSec .editBtnSec .threeDotDrop i:hover {
+    background-color:rgba(0,0,0,.1);
+}
+
+.createProfilePage .pageContSec .editBtnSec .dropdown-content {
+    top:25px !important;
+}
+
+.createProfilePage .profileDetailsSec .profileDetailsRows {
+    clear:both;
+    padding:10px 0px;
+}
+
+.createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+    width:160px;
+    font-weight:500;
+    float:left;
+    transition: all .3s ease-out;
+}
+
+.createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+    width:calc(100% - 160px);
+    float:left;
+    transition: all .3s ease-out;
+}
+
+.createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec .userType {
+    font-weight: 400;
+    color: #00a9aa;
+    //	padding-left:5px;
+}
+
+
+
+
+
+.createProfilePage .addiInfoSec {
+    position:relative;
+}
+
+.createProfilePage .addiInfoSec .saveBtnSec {
+    clear: both;
+    margin: 50px 0px 0px 12px;
+    text-align:center;
+}
+
+.createProfilePage .addiInfoSec .saveBtnSec .btn {
+    padding:0px;
+}
+
+.createProfilePage .addiInfoSec .saveBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .contactDetailsSec {
+    width:calc(50% - 20px);
+    margin-right:20px;
+    float:left;
+}
+
+
+.createProfilePage .addiInfoSec .contactDetailsSec .fieldRowSec {
+    width:100%;
+    clear:both;
+    margin:0px 0px 40px 0px;
+}
+
+.select-wrapper input.select-dropdown {
+    width:calc(100% - 20px);
+    padding:0px 20px 0px 0px;
+}
+
+
+.createProfilePage .addiInfoSec .skillsSec .fieldRowSec {
+    width:100%;
+    clear:both;
+    margin:0px 0px 40px 0px;
+}
+
+
+.createProfilePage .addiInfoSec .contactDetailsSec .fieldRowSec .cityBoxSec {
+    float:left;
+    width:calc(50% - 10px);
+}
+
+
+.createProfilePage .addiInfoSec .contactDetailsSec .fieldRowSec .stateBoxSec {
+    float:right;
+    width:calc(50% - 10px);
+}
+
+/* new Office Hours Sections Start */
+
+.newEnterAvailabilFormSec {
+    width:420px;
+    padding:20px 0px 35px 0px;
+    margin:auto;
+	position:relative;
+}
+
+.newEnterAvailabilFormSec .loadingSec {
+	position: absolute;
+	width: 100%;
+	background-color: rgba(255,255,255,.5);
+	z-index: 444;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	}
+
+.newEnterAvailabilFormSec .loadingSec .loaderBodySec {
+    width: 50px;
+    margin: 250px auto;
+	}
+
+
+.newEnterAvailabilFormSec .hoursRowSec {
+    clear:both;
+    margin:0px 0px 20px 0px;
+}
+
+
+.newEnterAvailabilFormSec .hoursRowSec .dayFieldSec {
+    width:100px;
+    float:left;
+    margin:23px 30px 0px 0px;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 19px;
+    color: rgba(0,0,0,.5);
+    }
+    
+    
+.newEnterAvailabilFormSec .hoursRowSec .startTimeSec {
+    width:120px;
+    float:left;
+    margin:0px 0px 0px 0px;
+    }
+    
+    
+.newEnterAvailabilFormSec .hoursRowSec .endTimeSec {
+    width:120px;
+    float:left;
+    margin:0px 0px 0px 30px;
+    }
+    
+
+
+
+.newEnterAvailabilFormSec .saveBtnSec {
+    clear: both;
+    margin: 50px 0px 0px 0px;
+    text-align:center;
+}
+
+.newEnterAvailabilFormSec .saveBtnSec .btn {
+    padding: 0px;
+}
+
+.newEnterAvailabilFormSec .saveBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+/* new Office Hours Sections End */
+
+.availabilityTabSec {
+    position:relative;
+}
+
+
+
+.enterAvailabilFormSec {
+    width:350px;
+    padding:20px 0px 35px 0px;
+    margin:auto;
+}
+
+
+
+.enterAvailabilFormSec .dayTimeRowSec {
+    clear:both;
+    padding:10px 0px;
+}
+
+.enterAvailabilFormSec .daySec {
+    float:left;
+    width:50%;
+    font-weight:500;
+}
+
+.enterAvailabilFormSec .timeSec {
+    float:right;
+    width:50%;
+}
+
+.enterAvailabilFormSec .saveBtnSec {
+    clear: both;
+    margin: 50px 0px 0px 0px;
+}
+
+.enterAvailabilFormSec .saveBtnSec .btn {
+    padding: 0px;
+}
+
+.enterAvailabilFormSec .saveBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+.createProfilePage .addiInfoSec .contactDetailsSec .profileDetailsRows {
+    clear:both;
+    padding:10px 0px;
+}
+
+.bodyContSec .pageSecondHeading {
+    padding: 23px .75rem 0px 0px;
+}
+
+.createProfilePage .addiInfoSec .contactDetailsSec .headingText {
+    width:160px;
+    font-weight:500;
+    float:left;
+}
+
+.createProfilePage .addiInfoSec .contactDetailsSec .normalTextSec {
+    width:calc(100% - 160px);
+    float:left;
+    /*	color:#00a9aa;
+            font-weight:400;*/
+    word-wrap: break-word;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec {
+    width:calc(50% - 20px);
+    margin-left:20px;
+    float:left;
+    word-break:break-word;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .specCertiHeading {
+    padding:23px .75rem 0px 0px;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .addMoreFieldSec {
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .addMoreFieldSec .addMoreTextBox {
+    width:calc(100% - 80px);
+    float:left;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .addMoreFieldSec .addMoreBtnBox {
+    width:70px;
+    float:right;
+    text-align:right;
+    margin:30px 0px 0px 0px;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .addMoreFieldSec .addMoreBtnBox .btn {
+    height: 30px;
+    line-height: 30px;
+    outline: 0;
+    padding: 0 1rem;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .proSummaryTextareaSec {
+    word-break: break-word;
+    text-align: justify;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .proSummaryTextareaSec .input-field {
+    margin-top:0px;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .proSummaryTextareaSec .materialize-textarea {
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.bodyContSec .createProfilePage .addiInfoSec .skillsSec .professionalSummaryBoxSec {
+    word-break: break-word;
+    text-align: justify;
+}
+
+
+
+.createProfilePage .addiInfoSec .skillsSec .profileDetailsRows {
+    clear:both;
+    padding:10px 0px;
+}
+
+.createProfilePage .addiInfoSec .skillsSec .headingText {
+    width:100px;
+    font-weight:500;
+    float:left;
+}
+
+.createProfilePage .addiInfoSec .skillsSec .normalTextSec {
+    width:calc(100% - 100px);
+    float:left;
+}
+
+.createProfilePage .addiInfoSec .skillsSec .headingTextNote {
+    width:100%;
+    font-weight:500;
+    clear:both;
+}
+
+.createProfilePage .addiInfoSec .skillsSec .normalTextNoteSec {
+    width:100%;
+    clear:both;
+}
+
+.createProfilePage .addiInfoSec .editBtnSec {
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+.createProfilePage .addiInfoSec .editBtnSec .btn {
+    padding:0px;
+}
+
+.createProfilePage .addiInfoSec .editBtnSec input[type="submit"], input[type="button"] {
+    line-height: 34px;
+    width: 100%;
+    display: block;
+    padding: 1px 30px 2px 30px;
+    outline: none;
+}
+
+
+/* Job Seeker Page End */
+
+
+/* Dental office Page Start */
+
+.jobOpeningListSec {
+}
+
+.jobOpeningListSec .createJobBtn {
+    float:right;
+    clear:both;
+    margin-bottom:10px;
+}
+
+.jobOpeningListSec .paginationDivSec .pagination {
+    width:405px;
+    margin:20px auto 0px auto;
+}
+
+.jobOpeningListSec .paginationDivSec ul {
+    margin:0px;
+    padding:0px;
+}
+
+.jobOpeningListSec .paginationDivSec ul li {
+    margin:0px;
+    padding:0px;
+    display:inline;
+    cursor:pointer;
+    font-weight:500;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    transition: all .3s ease-out;
+}
+
+.jobOpeningListSec .paginationDivSec ul .pagePrev {
+    float:left;
+    padding:5px 13px;
+    color:#00a9aa;
+}
+
+.jobOpeningListSec .paginationDivSec ul .pagePrev:hover {
+    background-color:#00a9aa;
+    color:#FFFFFF;
+}
+
+.jobOpeningListSec .paginationDivSec ul .pageNo {
+    float:left;
+    padding:5px 13px;
+}
+
+.jobOpeningListSec .paginationDivSec ul .pageNo:hover {
+    background-color:#00a9aa;
+    color:#FFFFFF;
+}
+
+.jobOpeningListSec .paginationDivSec ul .textBox {
+    float:left;
+    padding:5px 13px;
+    width:50px;
+}
+
+.jobOpeningListSec .paginationDivSec ul .textBox input[type=text] {
+    border:1px solid rgba(0,0,0,.7);
+    border-radius: 0;
+    outline: none;
+    height:20px;
+    line-height:20px;
+    font-size:16px;
+    text-align:center;
+}
+
+.jobOpeningListSec .paginationDivSec ul .textBox input[type=text]:focus:not([readonly]) {border-bottom:1px solid rgba(0,0,0,.7);box-shadow:0 0px 0 0 rgba(0,0,0,.5)}
+
+.jobOpeningListSec .paginationDivSec ul .pageNext {
+    float:left;
+    padding:5px 13px;
+    color:#00a9aa;
+}
+
+.jobOpeningListSec .paginationDivSec ul .pageNext:hover {
+    background-color:#00a9aa;
+    color:#FFFFFF;
+}
+
+
+.pagination {
+    /*width:405px;*/
+    width:240px;
+    margin:20px auto 0px auto;
+}
+
+.pagination li {
+    margin:0px 5px;
+    float: left;
+    /*font-size:20px;*/
+    display:inline;
+    cursor:pointer;
+    font-weight:500;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    transition: all .3s ease-out;
+}
+
+/*.pagination li:hover {
+        background-color:#00a9aa;
+        color:#FFFFFF !important;
+        }*/
+
+.pagination .active {
+    background-color:#00a9aa !important;
+    color:#FFFFFF;
+    line-height: 20px;
+}
+
+.pagination li:first-child {
+    line-height: 17px !important;
+}
+
+.pagination li:last-child {
+    line-height: 17px;
+}
+
+.pagination li:last-child a {
+    line-height: 17px !important;
+}
+
+.pagination li a {
+    line-height: 20px !important;
+    font-size:20px !important;
+    padding:0;
+    padding: 5px 13px !important;
+}
+
+.pagination li a:hover {
+    background-color:#00a9aa;
+    color:#FFFFFF !important;
+}
+
+.pagination li:first-child a {
+    line-height: 17px !important;
+}
+
+
+.jobOpeningListSec .jobListTableSec {
+    width:100%;
+    overflow:auto;
+}
+
+.jobOpeningListSec .jobListTableSec table {
+    min-width: 790px;
+    width:100%;
+}
+
+.jobOpeningListSec .jobListTableSec table tr {
+    border-bottom:1px solid rgba(0,0,0,.05);
+    font-size:15px;
+    cursor:pointer;
+}
+
+.jobOpeningListSec .jobListTableSec table tr th {
+    padding:10px 10px;
+}
+
+.jobOpeningListSec .jobListTableSec table tr td {
+    padding:0px 0px;
+}
+
+.jobOpeningListSec .jobListTableSec table tr td a {
+    padding:10px 10px;
+    display:block;
+    color: rgba(0,0,0,.8);
+}
+
+
+.denOffOpenDetailSec {
+}
+
+.denOffOpenDetailSec .topRightBtnSec {
+    float:right;
+    width:404px;
+    margin-bottom:20px;
+}
+
+.denOffOpenDetailSec .topRightBtnSec .editBtn {
+    float:right;
+    padding: 0;
+    width: 110px;
+    margin-left:10px;
+}
+
+.denOffOpenDetailSec .topRightBtnSec .deleteBtn {
+    float:right;
+    padding: 0;
+    width: 110px;
+    margin-left:10px;
+    background-color:#ec501e;
+}
+
+.denOffOpenDetailSec .topRightBtnSec .completeBtn {
+    float:right;
+    padding: 0;
+    width: 150px;
+    margin-left:10px;
+}
+
+
+
+.denOffOpenDetailSec .pageContBox .headingText {
+    width: 160px;
+    font-weight: 500;
+    float: left;
+    padding: 10px 0px;
+}
+
+.denOffOpenDetailSec .pageContBox .fieldRowSec .normalText {
+    width: calc(100% - 160px);
+    float: left;
+    transition: all .3s ease-out;
+    padding: 10px 0px;
+	text-align:justify;
+}
+
+/* Dental office Find Worker Page Start */
+.doProfileFindWorker {
+    width:850px;
+    margin:auto;
+    padding:0px 0px 0px 0px;
+    transition: all .3s ease-out;
+    position:relative;
+}
+
+.doProfileFindWorker .profileImgSec {
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+    width:200px;
+    height:200px;
+    transition: all .3s ease-out;
+    float:left;
+}
+
+.doProfileFindWorker .profileImgSec img {
+    width:100%;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+.doProfileFindWorker .profileDetailsSec {
+    transition: all .3s ease-out;
+    float:left;
+    width:calc(100% - 230px);
+    margin:0px 0px 0px 30px;
+    position:relative;
+    font-weight:400;
+    color:rgba(0,0,0,.6);
+}
+
+.doProfileFindWorker .profileDetailsSec .nameSec {
+    font-size:30px;
+    padding:0px 0px 20px 0px;
+    width:calc(100% - 125px);
+    float:left;
+}
+
+.doProfileFindWorker .profileDetailsSec .rowSec {
+    clear:both;
+}
+
+.doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+    float:left;
+    font-weight:600;
+    padding:10px 20px 10px 0px;
+    width:160px;
+}
+
+.doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+    float:left;
+    padding:10px 0px;
+}
+
+.doProfileFindWorker .profileDetailsSec .profileRightBtnSec {
+    transition: all .3s ease-out;
+    float:right;
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+
+.doProfileFindWorker .profileDetailsSec .threeDotSec {
+    width:30px;
+    height:30px;
+    position:absolute;
+    top:0px;
+    right:-20px;
+    display:none;
+}
+
+.doProfileFindWorker .profileDetailsSec .threeDotSec .dropdown-content {
+    top: 25px !important;
+}
+
+.doProfileFindWorker .profileDetailsSec .threeDotSec i {
+    display:block;
+}
+
+/* Dental office Find Worker Page End */
+
+
+.jobOpeningFormSec {
+    position:relative;
+}
+
+.jobOpeningFormSec .jobOpenPopupSec {
+    position:absolute;
+    width:100%;
+    height:100%;
+    line-height:100%;
+    top:0px;
+    left:0px;
+    z-index:999;
+    background-color:rgba(255,255,255,.8);
+}
+
+.jobOpeningFormSec .jobOpenPopupSec .loaderBodySec {
+    text-align:center;
+    width:100%;
+    padding:200px 0px;
+}
+
+.doProfileFindWorker .filterBtnSec {
+    width:100%;
+    clear:both;
+    margin-bottom:20px;
+}
+
+.doProfileFindWorker .filterBtnSec .filterBtn {
+    float:left;
+}
+
+.doProfileFindWorker .filterBtnSec .filterBtn input[type=button] {
+    width:120px;
+    padding:0px;
+}
+
+.jsFindJobRowSec {
+}
+
+.jsFindJobRowSec .rowSec .leftTextSec {
+    width: 160px;
+}
+
+.jsFindJobRowSec .rowSec .rightTextSec {
+    width: calc(100% - 160px);
+}
+
+.jsFindJobRowSec .rowSec .locationBlueText {
+    color:#00a9aa;
+}
+
+.jsFindJobRowSec .rowSec .locationBlueText a {
+    color:#00a9aa;
+}
+
+.jsFindJobPopUpSec {
+    width: 450px;
+    padding: 0;
+    max-height: 75%;
+    height: 550px !important;
+}
+
+.jsFindJobPopUpSec .modalContentSec {
+    position: absolute;
+    height: calc(100% - 56px);
+    max-height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding:24px;
+    bottom: 0;
+}
+
+.jsFindJobPopUpSec .modalContentSec .fieldHeadingSec {
+    font-weight:bold;
+}
+
+.jsFindJobPopUpSec .modalContentSec .formRowSec {
+    margin:0px 0px 30px 0px;
+    clear:both;
+}
+
+.jsFindJobPopUpSec .modalContentSec .formRowSec .colSecOne {
+    float:left;
+    width:calc(50% - 15px);
+    margin-right:15px;
+}
+
+.jsFindJobPopUpSec .modalContentSec .formRowSec .colSecTwo {
+    float:left;
+    width:calc(50% - 15px);
+    margin-left:15px;
+}
+
+.jsFindJobPopUpSec .modalContentSec .formBtnSec {
+    padding:20px 0px 0px 0px;
+    clear:both;
+}
+
+.jsFindJobPopUpSec .modalContentSec .formBtnSec input[type=submit] {	
+    text-decoration: none;
+    color: #fff;
+    background-color: #00a9aa;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    height: 45px;
+    line-height: 45px;
+    outline: 0;
+    padding: 0 2rem;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    width:80%;
+    margin:0 10%;
+}
+.jsFindJobPopUpSec .modalContentSec .formBtnSec input[type=button] {	
+    text-decoration: none;
+    color: #fff;
+    background-color: #00a9aa;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    height: 45px;
+    line-height: 45px;
+    outline: 0;
+    padding: 0 2rem;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    width:80%;
+    margin:0 10%;
+}
+
+.jsFindJobPopUpSec .modalHeader {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    width:100%;
+    border-radius: 0 0 2px 2px;
+    background-color: #fafafa;
+    padding: 0px 24px;
+    height: 56px;
+    width: 100%;
+    font-size:25px;
+    line-height: 56px;
+    font-weight:400;
+}
+
+.jsFindJobPopUpSec .modalHeader .closeBtnSec {
+    float:right;
+    margin-top: 16px;
+}
+
+.jsFindJobPopUpSec .modalHeader .closeBtnSec a {
+    display:block;
+    color:#333;
+}
+
+/* Dental office Page End */
+
+.thumbPrevImg{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    float:left;
+    margin:5px;
+}
+
+.thumbPrevImg img {
+    height: 100%;
+    width:100%;
+}
+
+.previewClsBtn {
+    position: absolute;
+    cursor:pointer;
+    width: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background-color: #333;
+    color: #FFF;
+    right: 10px;
+    top:0;
+    -webkit-border-radius: 300px 300px 300px 300px;
+    -moz-border-radius: 300px 300px 300px 300px;
+    border-radius: 300px 300px 300px 300px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1150px){
+
+
+    .bodyContSec .createProfilePage {
+        width: 95%;
+    }
+
+    .withMenuBody .createProfilePage {
+        width: 95%;
+    }
+
+    .bodyContSec .doProfileFindWorker {
+        width: 95%;
+    }
+
+    .withMenuBody .doProfileFindWorker {
+        width: 100%;
+        margin:auto;
+        float:none;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:150px;
+        height:150px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileImgSec {	
+        width:150px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 180px);
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec {	
+        width: calc(100% - 180px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 5px 20px 5px 0px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 5px 0px 5px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 5px 20px 5px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 5px 0px 5px 0px;
+    }
+
+
+}
+
+
+/* Responsive Start */
+@media screen and (max-width: 1100px){
+    .withMenuBody {
+        width: calc(100% - 200px);
+        float: none;
+        margin: 0px 100px;
+    }
+
+
+
+    .bodyContSec .settingPage {
+        width:95%;
+        margin:auto;
+    }
+
+
+
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .linkBtn {
+        padding:0px 20px;
+    }
+
+
+    .bodyContSec .createProfilePage .addiInfoSec .editBtnSec input[type="submit"], input[type="button"] {
+        padding:0px 20px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .bodyContSec {
+        width: calc(100% - 260px);
+        padding: 90px 0px 50px 0px;
+        margin: 0px 5px;
+    }
+    .withMenuBody {
+        width: calc(100% - 100px);
+        float: none;
+        margin: 0px 50px;
+    }
+
+    .settingPage .setAccountRows {
+        width:100%;
+        margin-right:0;
+    }
+
+    .settingPage .accountEmailBoxes {
+        width:calc(100% - 130px);
+    }
+
+    .settingPage .saveBtn {
+        width:130px;
+    }
+
+    .createProfilePage .profileImgSec {
+        width: 115px;
+    }
+
+    .createProfilePage .profileDetailsSec {
+        width: calc(100% - 115px);
+        padding: 0px 90px 0px 20px;
+    }
+
+    .createProfilePage .profileDetailsSec .profileDetailsRows {
+        padding: 5px 0px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .contactDetailsSec {
+        padding-top:50px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .skillsSec {
+        padding-top:50px;
+    }
+
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:120px;
+        height:120px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileImgSec {	
+        width:120px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 150px);
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec {	
+        width: calc(100% - 150px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .profileRightBtnSec {
+        display:none;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .profileRightBtnSec {
+        display:block;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .threeDotSec {
+        display:block;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .threeDotSec {
+        display:none;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        width: calc(100% - 10px);
+        font-size:25px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        width: calc(100% - 125px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 2px 20px 2px 0px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 2px 0px 2px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 2px 20px 2px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 2px 0px 2px 0px;
+    }	
+
+
+}
+
+@media screen and (max-width: 950px){
+
+    .bodyContSec {
+        width: calc(100% - 260px);
+        padding: 90px 0px 50px 0px;
+        margin: 0px 5px;
+        right:0px;
+    }
+    .withMenuBody {
+        width: calc(100% - 50px);
+        float: none;
+        margin: 0px 25px;
+    }
+    .bodyContSec .dashboardContSec {
+        width:95%;
+        margin:auto;
+    }
+    .withMenuBody .dashboardContSec {
+        width:650px;
+        margin:auto;
+    }
+
+
+    .withMenuBody .doProfileFindWorker {
+        width: 95%;
+    }	
+
+
+    .bodyContSec .createProfilePage .genInfoFormSec .detailFormSec .titleRow {
+        float:left;
+        width:30%;
+        padding:0px 10px;
+    }
+
+    .bodyContSec .createProfilePage .genInfoFormSec .detailFormSec .nameRow {
+        float:left;
+        width:70%;
+        padding:0px 10px;
+    }
+
+    .bodyContSec .createProfilePage .genInfoFormSec .detailFormSec .credentialRow {
+        float:left;
+        width:100%;
+        padding:0px 10px;
+    }
+
+    .bodyContSec .createProfilePage .genInfoFormSec .detailFormSec .commonRow {
+        float:left;
+        width:100%;
+        padding:0px 10px;
+    }
+
+
+
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .titleRow {
+        float:left;
+        width:25%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .nameRow {
+        float:left;
+        width:41.6666666667%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .credentialRow {
+        float:left;
+        width:33.3333333333%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .commonRow {
+        float:left;
+        width:67%;
+        padding:0px 10px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .contactDetailsSec {
+        width:100%;
+        margin:0px 0px 0px 0px;
+        float:none;
+        padding-top:0px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .skillsSec {
+        width:100%;
+        float:none;
+        margin:0px;
+        padding-top:50px;
+    }
+    .withMenuBody .createProfilePage .addiInfoSec .skillsSec {
+        padding-top:0px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .saveBtnSec {
+        margin: 50px 0px 0px 12px;
+        text-align:center;
+    }
+
+
+
+    .withMenuBody .createProfilePage .addiInfoSec .contactDetailsSec {
+        width:calc(50% - 10px);
+        margin-right:10px;
+        float:left;
+    }
+
+    .withMenuBody .createProfilePage .addiInfoSec .skillsSec {
+        width:calc(50% - 10px);
+        margin-left:10px;
+        float:left;
+    }
+
+
+
+
+    .withMenuBody .createProfilePage .addiInfoSec .saveBtnSec {
+        margin: 50px 0px 0px 12px;
+        text-align:left;
+    }
+
+
+    .bodyContSec .createProfilePage .profileImgSec {
+        width:80px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec {
+        width: calc(100% - 80px);
+        padding:0px 25px 0px 10px;
+    }
+
+
+    .withMenuBody .createProfilePage .profileImgSec {
+        width:80px;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec {
+        width: calc(100% - 80px);
+        padding:0px 25px 0px 10px;
+    }
+
+    .bodyContSec .createProfilePage .addiInfoSec .editBtnSec input[type="submit"], input[type="button"] {
+        padding: 1px 20px 2px 20px;
+    }
+
+    .withMenuBody .createProfilePage .addiInfoSec .editBtnSec input[type="submit"], input[type="button"] {
+        padding: 1px 20px 2px 20px;
+    }
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .linkBtn {
+        padding:0px 20px;
+    } 
+
+    .withMenuBody .createProfilePage .pageContSec .editBtnSec .linkBtn {
+        padding:0px 20px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows {
+        clear: both;
+        padding: 0px 0px;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows {
+        clear: both;
+        padding: 5px 0px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        float:left;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        width: 160px;
+        margin-left:0px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        float:left;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        width: calc(100% - 160px);
+    }
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .generalEditBtn {
+        display:none;
+    }
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .threeDotDrop {
+        display:block;
+        margin-right:-10px;
+    }
+
+    .withMenuBody .createProfilePage .pageContSec .editBtnSec .generalEditBtn {
+        display:block;
+    }
+
+    .withMenuBody .createProfilePage .pageContSec .editBtnSec .threeDotDrop {
+        display:none;
+    }
+
+    .bodyContSec .pageContSec .pageContBox .formBoxesSec .boxLeftSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-right: 0px;
+        float: left;
+    }
+
+    .withMenuBody .pageContSec .pageContBox .formBoxesSec .boxLeftSec {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        float: left;
+    }
+
+    .bodyContSec .pageContSec .pageContBox .formBoxesSec .boxRightSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-left: 0px;
+        float: left;
+    }
+
+    .withMenuBody .pageContSec .pageContBox .formBoxesSec .boxRightSec {
+        width: calc(50% - 20px);
+        margin-left: 20px;
+        float: left;
+    }
+
+
+    .createProfilePage .genInfoFormSec .detailFormSec .commonRow .headingText {
+        width:125px;
+    }
+
+
+    .createProfilePage .genInfoFormSec .detailFormSec .commonRow .normalText {
+        width: calc(100% - 125px);
+    }
+
+
+    .bodyContSec .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .withMenuBody .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bodyContSec .createProfilePage .genInfoFormSec .detailFormSec {
+        width: calc(100% - 150px);
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec {
+        width: calc(100% - 230px);
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .dashboardContSec {
+        width:93%;
+        margin:auto;
+    }
+
+
+
+    .withMenuBody .settingPage {
+        width:95%;
+        margin:auto;
+    }
+
+
+    .bodyContSec .dashboardContSec .dashboardContRows .detailsContractorSec .name {
+        float:left;
+        width:calc(100% - 50px);
+    }
+
+    .bodyContSec .dashboardContSec .dashboardContRows .starRatingSec {
+        display:none;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .estiTotSec {
+        width:calc(100% - 45px);
+    }	
+
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat {
+        display:block;
+        margin-right: -3px;
+    }
+
+
+
+    .bodyContSec .dashboardContSec .imgContractorSec .starRatingSec {
+        display:block;
+    }
+
+
+    .withMenuBody .dashboardContSec .dashboardContRows .detailsContractorSec .name {
+        float:left;
+        width:calc(100% - 125px);
+    }
+
+    .withMenuBody .dashboardContSec .dashboardContRows .starRatingSec {
+        display:block;
+    }
+
+
+
+    .withMenuBody .dashboardContSec .dashboardContRows .modStartRat {
+        display:none;
+    }
+
+
+
+    .withMenuBody .dashboardContSec .dashboardContRows .detailsContractorSec .estiTotSec {
+        width: calc(100% - 120px);
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+        font-size:15px;
+    }
+     
+
+}
+
+@media screen and (max-width: 850px){
+
+
+
+    .bodyContSec .settingPage #accountSettings {
+        width:95%;
+    }
+
+    .bodyContSec .settingPage #changePassword {
+        width:95%;
+    }
+
+    .bodyContSec .settingPage #feedback {
+        width:95%;
+    }
+
+    .withMenuBody .settingPage #accountSettings {
+        width:550px;
+    }
+
+    .withMenuBody .settingPage #changePassword {
+        width:550px;
+    }
+
+    .withMenuBody .settingPage #feedback {
+        width:550px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        float: left;
+        width: auto;
+        margin-right:10px;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        float: left;
+        margin-right:0px;
+        width:160px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        float: left;
+        width: auto;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        float: left;
+        width:calc(100% - 160px);
+    }
+
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:100px;
+        height:100px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileImgSec {	
+        width:120px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 110px);
+        margin:0px 0px 0px 10px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec {	
+        width: calc(100% - 150px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        width: calc(100% - 10px);
+        font-size:20px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        width: calc(100% - 125px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 10px 0px 0px;
+        width:147px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 2px 20px 2px 0px;
+        width: 160px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 2px 0px 2px 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 800px){
+}
+
+@media screen and (max-width: 768px){
+    body {
+        font-size:14px;
+    }
+
+    .dashBoardMainMenu .tabs {
+        background-color:#009a9b;
+    }
+
+
+
+    .dashBoardMainMenu .tabs .tab a {
+        background-color:#009a9b;
+    }
+
+    .privPolicyContentSec .privPoliHead {
+        font-size:20px;
+    }
+
+
+    .bodyContSec .settingPage #accountSettings {
+        width:95%;
+        margin:auto;
+    }
+
+    .bodyContSec .settingPage #changePassword {
+        width:95%;
+    }
+
+    .bodyContSec .settingPage #feedback {
+        width:95%;
+        margin:auto;
+    }
+
+
+    .withMenuBody .settingPage #accountSettings {
+        width:95%;
+    }
+
+    .withMenuBody .settingPage #changePassword {
+        width:95%;
+    }
+
+    .withMenuBody .settingPage #feedback {
+        width:95%;
+    }
+
+
+    .headerSec .topHeader {
+        width: calc(100% - 0px);
+        width:100%;
+        margin: auto;
+    }
+    .headerSec .topHeader .topMenuIcon {
+        float: left;
+        margin: 10px 0px 10px 15px;
+        width:auto;
+        cursor:pointer;
+    }
+
+    .menuMaskOn {
+        display:block !important;
+        background-color:rgba(0,0,0,.7);
+        position:fixed;
+        z-index:888;
+        width:100%;
+        height:100%;
+    }
+
+    .leftSec {
+        height: calc(100% - 0px);
+        width:100%;
+        margin-top: 0px;
+    }
+
+    .leftMenuSec {
+        left: -250px;
+    }
+
+    .bodyContSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin: 0px 0px;
+        padding: 130px 0px 50px 0px;
+    }
+
+    .leftMenuBlock {
+        left: 0px;
+        transition: all .3s ease-out;
+        width: 250px;
+        z-index: 999;
+    }
+
+
+    .withMenuBody {
+        width: calc(100% - 0px);
+        width:100%;
+    }
+
+    .bodyContSec .dashboardContSec {
+        width:93%;
+        margin:auto;
+    }
+
+    .withMenuBody .dashboardContSec {
+        width:93%;
+        margin:auto;
+    }
+
+
+    .dashboardContSec .dashboardContRows {
+        margin: 0px 0px 15px 0px;
+    }   
+
+
+    .largePopUp {
+        width: 95%;
+    }
+
+    .privPolicyContentSec ol {
+        padding: 0px 0px 0px 20px;
+    }
+    .privPolicyContentSec .privPoliHead {	
+        font-size: 1.8rem;
+    }
+
+    .tabs .tab a {
+        font-size:14px;
+    }
+
+    .headerSec .topHeader .menuSec {
+        width:100%;/*
+        border-top:1px solid rgba(255,255,255,.1);*/
+        background-color:#009a9b;
+        overflow:auto;
+        padding:0px 15px;
+    }
+
+    .profileHeadSec {
+        float:left;    
+        margin: 0px 20px 0px 20px;
+        width: calc(100% - 40px);
+        padding: 0px 0px;
+    }
+
+    .profileHeadSec .profileNameSec {
+        width: 100%;
+        margin: auto;
+        color: #FFF;
+        font-size: 18px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .dashBoardMainMenu .tabs {
+        height: 45px;
+        line-height: 45px;
+    }
+    .dashBoardMainMenu .tab {
+        height: 45px;
+        line-height: 45px;
+    }
+    .dashBoardMainMenu .tab a {
+        font-weight:400;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+        font-size:14px;
+        width: calc(100% - 100px);
+        min-height:121px;
+        padding:13px 22px 13px 20px;
+    }
+
+
+    .dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 100px;
+    }
+
+    .bodyContSec .dashboardContSec .dashboardContRows .detailsContractorSec .name {
+        font-size:16px;
+    }
+
+    .bodyContSec .dashboardContSec .dashboardContRows .modStartRat {
+        display: block;
+        width:40px;
+    }
+
+    .withMenuBody .dashboardContSec .dashboardContRows .starRatingSec {
+        display: none;
+    }
+
+    .withMenuBody .dashboardContSec .dashboardContRows .modStartRat {
+        display: block;
+        width:40px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .contRows {
+        padding: 3px 0px 3px 0px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat i {
+        float:right;
+        font-size:20px;
+        color:rgba(0,0,0,.4);
+    }
+
+    .historyPage .bodyContSec {
+        padding: 90px 0px 50px 0px;
+    }
+
+    .historyPage .bodyContSec .dashboardContSec .dashboardContRows .detailsContractorSec .name {
+        width: calc(100% - 0px)
+            width:100%;
+    }	
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .titleRow {
+        float:left;
+        width:30%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .nameRow {
+        float:left;
+        width:70%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .credentialRow {
+        float:left;
+        width:100%;
+        padding:0px 10px;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec .commonRow {
+        float:left;
+        width:100%;
+        padding:0px 10px;
+    }
+
+    .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 170px;
+        height: 170px;
+        margin: 0px 15px 0px 0px;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec {
+        float: left;
+        width: calc(100% - 190px);
+    }
+
+
+
+    .withMenuBody .createProfilePage .addiInfoSec .saveBtnSec {
+        text-align:center;
+    }
+
+
+
+
+    .withMenuBody .createProfilePage .addiInfoSec .contactDetailsSec {
+        width:100%;
+        margin:0px 0px 0px 0px;
+        float:none;
+    }
+
+    .withMenuBody .createProfilePage .addiInfoSec .skillsSec {
+        width:100%;
+        float:none;
+        padding-top:50px;
+        margin:0px;
+    }
+
+    .withTopMenu {
+        padding: 130px 0px 50px 0px;
+    }
+
+    .withOutTopMenu {
+        padding: 90px 0px 50px 0px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows {
+        clear: both;
+        padding: 0px 0px;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec .profileDetailsRows {
+        clear: both;
+        padding: 0px 0px;
+    }
+
+
+
+
+
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        width: 145px;
+        margin-right:0px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        width: calc(100% - 145px);
+    }
+
+
+    .profilePopUpSec .genInfoFormSec .upLoadImgSec {
+        width:120px;
+        height:120px;
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec {
+        float: left;
+        width: calc(100% - 150px);
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec .titleRow {
+        width:30%;
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec .nameRow {
+        width:70%;
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec .credentialRow {
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .profilePopUpSec .genInfoFormSec .detailFormSec .commonRow {
+        width:100%;
+    }
+
+
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .generalEditBtn {
+        display:none;
+    }
+
+    .bodyContSec .createProfilePage .pageContSec .editBtnSec .threeDotDrop {
+        display:block;
+        margin-right:-10px;
+    }
+
+    .withMenuBody .createProfilePage .pageContSec .editBtnSec .generalEditBtn {
+        display:none;
+    }
+
+    .withMenuBody .createProfilePage .pageContSec .editBtnSec .threeDotDrop {
+        display:block;
+    }
+
+    .bodyContSec .pageContSec .pageContBox .formBoxesSec .boxLeftSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-right: 0px;
+        float: left;
+        clear:both;
+    }
+
+    .withMenuBody .pageContSec .pageContBox .formBoxesSec .boxLeftSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-right: 0px;
+        float: left;
+        clear:both;
+    }
+
+    .bodyContSec .pageContSec .pageContBox .formBoxesSec .boxRightSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-left: 0px;
+        float: left;
+        clear:both;
+    }
+
+    .withMenuBody .pageContSec .pageContBox .formBoxesSec .boxRightSec {
+        width: calc(100% - 0px);
+        width:100%;
+        margin-left: 0px;
+        float: left;
+        clear:both;
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .detailFormSec {
+        width: calc(100% - 150px);
+    }
+
+    .withMenuBody .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .headerSec .topHeader .menuSec .searchBoxSec {
+        float:none;
+        margin:5px auto 0px auto;
+    }
+
+    .headerSec .topHeader .menuSec .searchBoxSec .textBoxSec {
+        margin-bottom:7px;
+    }
+
+
+
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .profileRightBtnSec {
+        display:none;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .threeDotSec {
+        display:block;
+    }
+
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .profileRightBtnSec {
+        display:none;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .threeDotSec {
+        display:block;
+    }
+
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width: 130px;
+        height: 130px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileImgSec {
+        width: 130px;
+        height: 130px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width: calc(100% - 160px);
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec {
+        width: calc(100% - 160px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size: 22px;
+        padding: 0px 0px 0px 0px;
+        width: calc(100% - 10px);
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size: 22px;
+        padding: 0px 0px 0px 0px;
+        width: calc(100% - 10px);
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 5px 20px 5px 0px;
+        width: 140px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 5px 20px 5px 0px;
+        width: 140px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 5px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 5px 0px;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+}
+
+@media screen and (max-width: 650px){
+
+    .bodyContSec .createProfilePage .profileImgSec {
+        float: left;
+        width: 80px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec {
+        float: left;
+        width: calc(100% - 80px);
+    }
+
+    .withMenuBody .createProfilePage .profileImgSec {
+        float: left;
+        width: 80px;
+    }
+
+    .withMenuBody .createProfilePage .profileDetailsSec {
+        float: left;
+        width: calc(100% - 80px);
+        padding: 0px 67px 0px 10px;
+    }
+
+    .doProfileFindWorker .pageContSec .pageContBox {
+        padding: 15px 15px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px){
+
+
+    .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 120px;
+        height: 120px;
+        margin: 0px 15px 0px 0px;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec {
+        float: left;
+        width: calc(100% - 140px);
+    }
+
+    .upProfBtnRow {
+        bottom: -15px;
+        right: -10px;
+    }
+
+    .bodyContSec .settingPage #accountSettings {
+        width:100%;
+        margin:auto;
+    }
+
+    .bodyContSec .settingPage #changePassword {
+        width:95%;
+    }
+
+    .bodyContSec .settingPage #feedback {
+        width:100%;
+        margin:auto;
+    }
+
+
+    .withMenuBody .settingPage #accountSettings {
+        width:100%;
+    }
+
+    .withMenuBody .settingPage #changePassword {
+        width:95%;
+    }
+
+    .withMenuBody .settingPage #feedback {
+        width:100%;
+    }
+
+    .privPolicyContentSec .privPoliHead {
+        font-size:18px;
+    }
+    .settingPage .changePassBoxes {
+        width:calc(100% - 0px);
+        width:100%;
+        padding:0px 10px 10px 10px;
+        float:left;
+    }
+
+
+
+}
+
+@media screen and (max-width: 550px){
+    body {
+        font-size:14px;
+    }	
+
+    .profilePopUpSec .genInfoFormSec .upLoadImgSec {
+        width:120px;
+        height:120px;
+        margin:0px auto 60px auto;
+        float:none;
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec {
+        float: left;
+        width:100%;
+        clear:both;
+    }
+
+    .profilePopUpSec .genInfoFormSec .detailFormSec .saveBtnSec {
+        clear: both;
+        margin: 50px 0px 0px 0px;
+        text-align:center;
+    }
+
+    .closeMenuIcon {
+        display:block;
+    }
+
+    .leftSec ul li a {
+        font-size:14px;
+    }
+
+    .smallPopUp {
+        width:95%;
+    }
+
+    .settingPage .deleteAccoSec .deleteAccountSec .btn {
+        padding: 0px 10px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+        font-size:14px;
+        width: calc(100% - 80px);
+        padding: 10px 17px 10px 20px;
+        min-height:97px;
+    }
+
+    .dashboardContSec .dashboardContRows .threeDotSec {
+        margin: 4px -1px 0px 0px;
+    }
+
+    .bodyContSec .dashboardContSec .dashboardContRows .detailsContractorSec .name {
+        font-size:15px;
+    }
+
+
+    .dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 80px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .contRows {
+        padding: 1px 0px 1px 0px;
+    }
+
+    .dashboardContSec .dashboardContRows .threeDotSec i {
+        padding:0px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .locationSec {
+        width:calc(50% - 0px);
+        margin-right:0px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat {
+        width: 40px;
+        margin-right: -2px;
+    }
+    .dashboardContSec .dashboardContRows .detailsContractorSec .modStartRat i {
+        font-size:20px;
+    }
+
+
+
+
+
+
+
+    .leftMenuSec {
+        width: 85%;
+        left: -85%;
+    }
+
+    .leftMenuBlock {
+        left: 0%;
+        transition: all .3s ease-out;
+        width: 85%;
+        z-index:999;
+    }
+
+    .leftSec {
+        height: calc(100% - 0px);
+        width:100%;
+        margin-top: 0px;
+    }
+
+    .settingPage .settingPlanLeftSec {
+        width: 100%;
+        text-align:center;
+    }
+
+    .settingPage .settingPlanRightSec {
+        width: calc(100% - 0px);
+        width:100%;
+        float: left;
+        text-align:center;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .headingText {
+        width:auto;
+        margin-right:10px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec .profileDetailsRows .normalTextSec {
+        width:auto;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec .commonRow .headingText {
+        width:100%;
+        padding: 0px 0px;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec .commonRow .normalText {
+        width:100%;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec {
+        width:100% !important;
+    }
+
+
+
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:80px;
+        height:80px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:80px;
+        height:80px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 95px);
+        margin: 0px 0px 0px 15px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 95px);
+        margin: 0px 0px 0px 15px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:18px;
+        font-weight:500;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:18px;
+        font-weight:500;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 20px 0px 0px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 20px 0px 0px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .withMenuBody  .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+    }
+
+
+    .jsFindJobPopUpSec {
+        width:95%;
+    }
+
+    .bodyContSec .createProfilePage .genInfoFormSec .upLoadImgSec {
+        height:auto !important;
+    }
+
+    .jobOpeningFormSec label {
+        height: 30px;
+        line-height: 30px;
+        overflow: hidden;
+    }
+    
+    
+   
+    
+.newEnterAvailabilFormSec {
+    width:90%;
+    }
+    
+.newEnterAvailabilFormSec .hoursRowSec .dayFieldSec {    
+    width:100%;
+    font-size: 15px;
+    margin: 23px 15px 0px 0px;
+    }
+    
+.newEnterAvailabilFormSec .hoursRowSec .startTimeSec {    
+    width: 50%;
+    }
+    
+.newEnterAvailabilFormSec .hoursRowSec .endTimeSec {
+    width: calc(50% - 20px);
+    margin: 0px 0px 0px 20px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    /*.dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 120px;
+        float: inherit;
+            clear:both;
+            margin:auto;
+    }
+    
+    
+            
+    .dashboardContSec .dashboardContRows .imgContractorSec .starRatingSec {
+            bottom:-5px;
+            }
+    
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+            width:100%;
+            margin:15px 0px 0px 0px;
+            padding: 20px 30px  20px 30px;
+            -webkit-border-radius: 0px 0px 3px 3px;
+        -moz-border-radius: 0px 0px 3px 3px;
+        border-radius: 0px 0px 3px 3px;
+            }*/
+
+    .createProfilePage .genInfoFormSec .upLoadImgSec {
+        width: 120px;
+        height: 120px;
+        margin: 0px auto 20px auto;
+        clear:both;
+        float:none;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec {
+        float: none;
+        width:100%;
+    }
+
+    .createProfilePage .genInfoFormSec .detailFormSec .saveBtnSec {
+        text-align:center;
+    }
+
+
+
+
+    .dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 80px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+        width: calc(100% - 80px);
+        min-height:97px;
+        padding: 6px 17px 6px 15px;
+    }
+
+    .historyPage .dashboardContSec .dashboardContRows .detailsContractorSec {	
+        padding: 12px 17px 12px 15px;
+    }
+
+    .createProfilePage .addiInfoSec .contactDetailsSec .headingText {
+        width: 100%;
+        font-weight: 500;
+        float: left;
+    }
+    .createProfilePage .addiInfoSec .contactDetailsSec .normalTextSec {
+        width:100%;
+    }
+
+    .createProfilePage .addiInfoSec .skillsSec .headingText {
+        width: 100%;
+        font-weight: 500;
+        float: left;
+    }
+    .createProfilePage .addiInfoSec .skillsSec .normalTextSec {
+        width:100%;
+        word-wrap: break-word;
+    }
+
+    .pageContSec .viewProfileListBoxs {
+        padding: 15px 15px;
+    }
+
+    .createProfilePage .pageContSec .editBtnSec {
+        right: 20px;
+        top: 10px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec {
+        padding: 0px 15px 0px 10px;
+    }
+
+
+
+    .doProfileCreateSec .genInfoFormSec .upLoadImgSec {
+        margin: 0px auto 10px auto;
+    }
+
+    .jobOpeningListSec .paginationDivSec {
+        width: 300px;
+    }
+
+    .jobOpeningListSec .paginationDivSec ul .pagePrev {
+        padding: 0px 7px;
+    }
+
+    .jobOpeningListSec .paginationDivSec ul .pageNo {
+        padding: 0px 7px;
+    }
+    .jobOpeningListSec .paginationDivSec ul .textBox {
+        padding: 0px 5px;
+        width: 35px;
+    }
+
+    .jobOpeningListSec .paginationDivSec ul .pageNext {
+        padding: 0px 7px;
+    }
+
+
+    .headerSec .topHeader .menuSec .searchBoxSec {
+        float:none;
+        margin:5px auto 0px auto;
+        width:100%;
+    }
+
+
+    .bodyContSec .createProfilePage .addiInfoSec .skillsSec {
+        clear:both;	
+        padding-top: 20px;
+    }
+
+    .createProfilePage .addiInfoSec .fieldRowSec .normalText {
+        width:100%;
+    }
+
+    .denOffOpenDetailSec .topRightBtnSec {
+        width:100%;
+    }
+
+
+
+}
+
+@media screen and (max-width: 450px){
+
+    .dashBoardMainMenu .tab {
+        padding: 0px 10px;
+    }
+
+    .privPolicyContentSec .privPoliHead {
+        font-size:15px;
+    }
+    .settingPage .accountEmailBoxes {
+        width: calc(100% - 0px);
+        width:100%;
+    }
+
+    .settingPage .textAccountTab {
+        text-align:center;
+    }
+
+    .settingPage .saveBtn {
+        width: 100%;
+    }
+    .loginBgSec {
+        width:90%;
+    }
+
+    .loginBgSec .loginFormSec {
+        padding: 10px 20px 25px 20px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .contRows {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .hourRateSec {
+        width:100%;
+        text-align:left;
+    }
+
+
+
+
+    .dashboardContSec .dashboardContRows .detailsContractorSec .locationSec {
+        width:calc(100% - 0px);
+        width:100%;
+        margin-right:0px;
+    }
+
+    .historyPage .dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 100px;
+    }
+
+    .historyPage .dashboardContSec .dashboardContRows .detailsContractorSec {
+        width: calc(100% - 100px);
+        min-height: 121px;	
+        padding: 6px 17px 6px 15px;
+    }
+
+    .historyPage .dashboardContSec .dashboardContRows .detailsContractorSec .estiTotSec {
+        float:left;
+        width:100%;
+    }	
+
+    .historyPage .dashboardContSec .dashboardContRows .detailsContractorSec .paidRowSec {
+        float:left;
+        width:100%;
+        text-align:left;
+    }
+
+    .enterAvailabilFormSec {
+        width:90%;
+    }
+
+    .bodyContSec .createProfilePage .profileImgSec {
+        float: left;
+        width: 60px;
+    }
+
+    .bodyContSec .createProfilePage .profileDetailsSec {
+        float: left;
+        width: calc(100% - 60px);
+        padding: 0px 15px 0px 10px;
+    }
+
+
+    .denOffOpenDetailSec .topRightBtnSec {
+        float:right;
+        margin:20px 0;
+    }
+
+    .denOffOpenDetailSec .topRightBtnSec .editBtn {
+        float:right;
+        width:calc(50% - 5px);
+        margin:0px 0px 5px 5px;
+    }
+
+    .denOffOpenDetailSec .topRightBtnSec .deleteBtn {
+        float:right;
+        width:calc(50% - 5px);
+        background-color:#ec501e;
+        margin:0px 0px 5px 5px;
+    }
+
+    .denOffOpenDetailSec .topRightBtnSec .completeBtn {
+        float:right;
+        width:calc(50% - 5px);
+        margin:0px 0px 5px 5px;
+    }
+
+
+
+    .bodyContSec .doProfileFindWorker .profileImgSec {
+        width:75px;
+        height:75px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileImgSec {
+        width:75px;
+        height:75px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 85px);
+        margin: 0px 0px 0px 10px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec {
+        width:calc(100% - 85px);
+        margin: 0px 0px 0px 10px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:16px;
+        font-weight:500;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:16px;
+        font-weight:500;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 10px 0px 0px;
+        width:auto;
+        font-size: 13px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 10px 0px 0px;
+        width:auto;
+        font-size: 13px;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+        font-size: 13px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+        font-size: 13px;
+    }
+
+
+
+    .jsFindJobRowSec .rowSec .leftTextSec {
+        width: auto;
+    }
+
+    .jsFindJobRowSec .rowSec .rightTextSec {
+        width: auto;
+    }
+
+
+
+    .pageContSec .pageContBox .formBoxesSec .fieldBtnRowSec input[type="button"], .fieldBtnRowSec  input[type="reset"], .fieldBtnRowSec  input[type="submit"] {
+        min-width:100px;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+
+    .jobOpeningListSec .paginationDivSec ul .pagePrev {
+        padding: 0px 7px;
+    }
+
+    .jobOpeningListSec .paginationDivSec ul .pageNo {
+        padding: 0px 7px;
+    }
+    .jobOpeningListSec .paginationDivSec ul .textBox {
+        padding: 0px 5px;
+        width: 35px;
+    }
+
+    .jobOpeningListSec .paginationDivSec ul .pageNext {
+        padding: 0px 7px;
+    }
+
+
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 350px){
+    body {
+        font-size:13px;
+    }
+
+    .dashboardContSec .dashboardContRows .imgContractorSec {
+        width: 70px;
+    }
+    .dashboardContSec .dashboardContRows .detailsContractorSec {
+        width: calc(100% - 70px);
+        min-height: 84px;
+        padding: 0px 17px 0px 15px;
+        font-size:13px;
+    }
+
+
+
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:13px;
+        font-weight:500;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .nameSec {
+        font-size:13px;
+        font-weight:500;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 10px 0px 0px;
+        width:auto;
+        font-size: 12px;
+        font-weight:500;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .leftTextSec {
+        padding: 0px 10px 0px 0px;
+        width:auto;
+        font-size: 12px;
+        font-weight:500;
+    }
+
+    .bodyContSec .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+        font-size: 12px;
+    }
+
+    .withMenuBody .doProfileFindWorker .profileDetailsSec .rowSec .rightTextSec {
+        padding: 0px 0px 0px 0px;
+        font-size: 12px;
+    }
+
+}
+
+/* Responsive End */
+
+
+.myAddSmallText {
+	font-size: 12px;
+    color: #00a9aa;
+    font-weight: 400;
+	    padding-top: 12px;
+}
